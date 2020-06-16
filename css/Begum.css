@@ -1,0 +1,52 @@
+body {
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+.container {
+    
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+    grid-template-areas: "header header header"
+                         "section section section"
+                         "ads article article"
+                         "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#logo {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+}
+
+.section {
+    grid-area: section;
+}
+
+.article {
+    grid-area: article;
+}
+
+.ads {
+    grid-area: ads;
+}
+
+.footer {
+    grid-area: footer;
+}
+
